@@ -448,33 +448,42 @@
 
         <form class="form-group" name="form">
           <strong class="form-title">Оставьте свои данные, мы вам перезвоним</strong>
+
           <label class="form-label"
-            ><span class="form-input-title">Имя</span><input class="form-input" type="text"
-          /></label>
+            ><span class="form-input-title">Имя</span
+            ><input name="name" class="form-input" type="text" placeholder=" " />
+            <svg class="form-icon">
+              <use href="./photo/svg/icons.svg#username-form"></use></svg
+          ></label>
           <label class="form-label"
-            ><span class="form-input-title">Телефон</span><input class="form-input" type="tel"
-          /></label>
+            ><span class="form-input-title">Телефон</span
+            ><input name="tel" class="form-input" type="tel" placeholder=" " />
+            <svg class="form-icon">
+              <use href="./photo/svg/icons.svg#phone-form"></use></svg
+          ></label>
           <label class="form-label"
-            ><span class="form-input-title">Почта</span><input class="form-input" type="email"
-          /></label>
-          <label class="form-label"
+            ><span class="form-input-title">Почта</span
+            ><input name="email" class="form-input" type="email" placeholder=" " />
+            <svg class="form-icon">
+              <use href="./photo/svg/icons.svg#email-form"></use></svg
+          ></label>
+          <label class="form-label comment"
             ><span class="form-input-title">Комментарий</span
             ><textarea
+              name="comment"
               class="form-text-area"
               type="text"
               placeholder="Введите текст"
-              rows="5"
             ></textarea>
           </label>
-          <div class="form-submit-section">
-            <label class="form-label">
-              <input type="checkbox" name="agreement-terms-check" id="" /><span
-                >Соглашаюсь с рассылкой и принимаю
-                <a class="form-terms-of-agreement" href=""> Условия договора</a>
-              </span>
-            </label>
-            <button class="form-submit" type="submit">Отправить</button>
-          </div>
+
+          <label class="form-label terms-text">
+            <input type="checkbox" name="agreement-terms-check" id="" /><span
+              >Соглашаюсь с рассылкой и принимаю
+              <a class="form-terms-of-agreement" href=""> Условия договора</a>
+            </span>
+          </label>
+          <button class="form-submit" type="submit">Отправить</button>
         </form>
       </div>
     </div>
