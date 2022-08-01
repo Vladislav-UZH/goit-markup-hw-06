@@ -477,8 +477,13 @@
             ></textarea>
           </label>
 
-          <label class="form-label terms-text">
-            <input type="checkbox" name="agreement-terms-check" id="" /><span
+          <label class="form-label terms-section">
+            <input class="form-checkbox-orig" type="checkbox" name="agreement-terms-check" />
+            <svg class="form-terms-checkbox">
+              <use class="form-uncheck" href="./photo/svg/icons.svg#form-box-uncheck"></use>
+              <use class="form-check" href="./photo/svg/icons.svg#icon-check"></use>
+            </svg>
+            <span class="terms-agree-text"
               >Соглашаюсь с рассылкой и принимаю
               <a class="form-terms-of-agreement" href=""> Условия договора</a>
             </span>

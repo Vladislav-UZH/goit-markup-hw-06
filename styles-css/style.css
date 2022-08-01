@@ -637,8 +637,11 @@ fill: #afb1b8;
 
 .form-label{
   position: relative;
-  display: block;
+  display: flex;
   margin-bottom: 28px;
+}
+.form-label:last-of-type{
+  margin-bottom: 0;
 }
 .form-input-title{
   margin-bottom: 4px;
@@ -654,7 +657,7 @@ fill: #afb1b8;
   top: 50%;
   left: 40px;
   transition: transform var(--global-animation);
-  transform: translateY(-50%) scale(1.1);
+  transform: translateY(-50%);
 }
 /* .form-input-title{
   transform: translateY(-250%) translateX(-40px);
@@ -674,7 +677,13 @@ fill: #afb1b8;
   padding-left: 16px;
 }
 .comment{
-  margin-bottom: 0;
+  margin-bottom: 20px;
+}
+.terms-section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: none;
 }
 .form-input,.form-text-area{
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -712,8 +721,39 @@ fill: #afb1b8;
   height: 18px;
   
 }
-.terms-text{
-  margin-top: 20px;
+.form-checkbox-orig{
+  appearance: none;
+}
+.form-terms-checkbox{
+  margin-right: 8px;
+  width: 16px;
+  height: 15px;
+}
+.form-terms-checkbox>.form-check {
+  opacity: 0;
+  transition: opacity var(--global-animation);
+}
+
+.form-terms-checkbox>.form-uncheck{
+  opacity: 1;
+  transition: opacity var(--global-animation);
+}
+.form-checkbox-orig:checked + .form-terms-checkbox > .form-check{
+  opacity: 1;
+}
+.form-checkbox-orig:checked+.form-terms-checkbox>.form-uncheck {
+  opacity: 0;
+}
+
+
+
+.terms-agree-text{
+  user-select: none;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--main-text-color);
 }
 .form-terms-of-agreement{
   color: var(--link-hover-text-color);
