@@ -435,6 +435,22 @@
             </li>
           </ul>
         </div>
+
+        <form class="footer-form">
+          <div class="footer-form-section">
+            <strong class="footer-form-title">Подпишитесь на рассылку</strong>
+            <label class="footer-form-label">
+              <input class="footer-form-input" type="email" placeholder="Email" />
+            </label>
+          </div>
+
+          <button class="footer-form-btn" type="submit">
+            <span class="footer-form-btn-text">Подписаться</span
+            ><svg class="footer-form-icon">
+              <use href="./photo/svg/icons.svg#icon-send"></use>
+            </svg>
+          </button>
+        </form>
       </div>
     </footer>
 
@@ -450,31 +466,40 @@
           <strong class="form-title">Оставьте свои данные, мы вам перезвоним</strong>
 
           <label class="form-label"
-            ><span class="form-input-title">Имя</span
-            ><input name="name" class="form-input" type="text" placeholder=" " />
+            ><input name="name" class="form-input" type="text" placeholder=" " /><span
+              class="form-input-title"
+              >Имя</span
+            >
             <svg class="form-icon">
               <use href="./photo/svg/icons.svg#username-form"></use></svg
           ></label>
           <label class="form-label"
-            ><span class="form-input-title">Телефон</span
-            ><input name="tel" class="form-input" type="tel" placeholder=" " />
+            ><input
+              name="tel"
+              class="form-input"
+              type="tel"
+              minlength="12"
+              maxlength="12"
+              placeholder=" " /><span class="form-input-title">Телефон</span>
             <svg class="form-icon">
               <use href="./photo/svg/icons.svg#phone-form"></use></svg
           ></label>
           <label class="form-label"
-            ><span class="form-input-title">Почта</span
-            ><input name="email" class="form-input" type="email" placeholder=" " />
+            ><input name="email" class="form-input" type="email" placeholder=" " /><span
+              class="form-input-title"
+              >Почта</span
+            >
             <svg class="form-icon">
               <use href="./photo/svg/icons.svg#email-form"></use></svg
           ></label>
-          <label class="form-label comment"
-            ><span class="form-input-title">Комментарий</span
-            ><textarea
+          <label class="form-label">
+            <textarea
               name="comment"
               class="form-text-area"
               type="text"
               placeholder="Введите текст"
-            ></textarea>
+            ></textarea
+            ><span class="form-input-title comment">Комментарий</span>
           </label>
 
           <label class="form-label terms-section">
