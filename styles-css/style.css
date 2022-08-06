@@ -672,7 +672,7 @@ fill: #afb1b8;
   transition: fill var(--global-animation);
 }
 
-.modal-icon-close:hover {
+.modal-icon-close:hover,.modal-icon-close:focus {
   fill: var(--link-hover-text-color);
 }
 
@@ -707,7 +707,7 @@ fill: #afb1b8;
   display: flex;
   margin-bottom: 28px;
 }
-.form-label:last-of-type{
+.label-comment{
   margin-bottom: 0;
 }
 .form-input-title{
@@ -770,7 +770,7 @@ fill: #afb1b8;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: none;
+  margin-bottom: 0;
 }
 .form-input,.form-text-area{
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -815,8 +815,13 @@ fill: #afb1b8;
 
 .form-terms-checkbox>.form-uncheck{
   opacity: 1;
-  transition: opacity var(--global-animation);
+  transition: opacity var(--global-animation), fill var(--global-animation);}
+
+.form-checkbox-orig:focus+.form-terms-checkbox>.form-uncheck,
+.form-checkbox-orig:hover+.form-terms-checkbox>.form-uncheck{
+  fill: var(--link-hover-text-color);
 }
+
 .form-checkbox-orig:checked + .form-terms-checkbox > .form-check{
   opacity: 1;
 }
@@ -856,10 +861,11 @@ fill: #afb1b8;
     letter-spacing: 0.06em;
     border-radius: 4px;
     color: var(--footer-address-hover);
-    transition: background-color var(--global-animation), box-shadow var(--global-animation);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    transition: background-color var(--global-animation);
   }
     .form-submit:hover{
-      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+      
       background-color: #188CE8;
 
     }
